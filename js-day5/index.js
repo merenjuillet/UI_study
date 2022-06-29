@@ -18,7 +18,6 @@ window.addEventListener('hashchange',function(){
     ajax.send(); // 전송이 일어난다
     const newContent = JSON.parse(ajax.response);
     this.alert('사용자가 선택한 뉴스 제목은? '+ newContent.title);
-
     // console.log(newContent);
 }); 
 

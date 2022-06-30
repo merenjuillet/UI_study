@@ -43,8 +43,14 @@ header .gnb li {
 }
 
 header .gnb li a {
+    font: bold 16px/1 "Architects Daughter";
     color: bisque;
     letter-spacing: 3px;
+}
+
+header .gnb li.on a{
+    background-color: greenyellow;
+    color: white;
 }
 
 header .lnb {

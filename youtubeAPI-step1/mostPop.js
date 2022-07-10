@@ -2,7 +2,7 @@ const ajax = new XMLHttpRequest();
 let content = '';
 const MOST_URL = "https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=25&key=AIzaSyAmKCupzfgAF7MXqmsW8yE-VcVS2nO29Qo";
 ajax.open("GET", MOST_URL, false);
-ajax.send();
+ajax.send(); // 지연이 발생할 수 있다.
 
 // console.log(ajax.response);
 const result = JSON.parse(ajax.response); // {...items:[{snippet:...}]}
